@@ -1458,6 +1458,9 @@ cc_library_static {
         treble_linker_namespaces: {
             cflags: ["-DTREBLE_LINKER_NAMESPACES"],
         },
+        has_legacy_mmap: {
+            cppflags: ["-DLEGACY_MMAP"],
+        },
     },
     whole_static_libs: ["libsystemproperties"],
     cppflags: ["-Wold-style-cast"],
