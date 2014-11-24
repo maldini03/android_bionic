@@ -169,6 +169,9 @@ cc_binary {
         needs_text_relocations: {
             cppflags: ["-DTARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS"],
         },
+            needs_non_pie_support: {
+            cppflags: ["-DENABLE_NON_PIE_SUPPORT"],
+        },
     },
 
     cppflags: ["-Wold-style-cast"],
